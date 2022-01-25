@@ -19,6 +19,9 @@ public class App
         weatherData.setMeasurements(82,70,29.2f);
         weatherData.setMeasurements(78,90,29.2f);
 
-
     }
 }
+
+
+
+

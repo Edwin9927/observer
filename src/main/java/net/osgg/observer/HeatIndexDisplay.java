@@ -3,7 +3,10 @@ package net.osgg.observer;
 import java.util.*;
 
 public class HeatIndexDisplay implements Observer, DisplayElement{
+
     private float heatIndex = 0.0f;
+    private float temperature;
+    private float humidity;
     private WeatherData weatherData;
 
     public HeatIndexDisplay(WeatherData weatherData) {
@@ -31,8 +34,6 @@ public class HeatIndexDisplay implements Observer, DisplayElement{
                                 (0.000000000843296 * (temp * temp * humidity * humidity * humidity)) -
                                 (0.0000000000481975 * (temp * temp * temp * humidity * humidity * humidity)));
         display();
-
-
     }
 
     public void display() {
